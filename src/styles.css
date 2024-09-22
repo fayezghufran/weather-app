@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1600184981164-f1b5a6620b5f') no-repeat center center/cover;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 70%;
+  padding: 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 15px; 
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin-top: 10px; 
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weather-card {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-info {
+  margin-top: 15px;
+}
+
+.weather-info p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid #007bff;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@media (max-width: 768px) {
+  input, button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
